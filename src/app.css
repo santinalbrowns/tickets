@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+           /* Pale green background for the header */
+           
+            background-color: #006400; /* Pale Green */
+            padding: 20px;
+            text-align: center;       
+          
+                     
+}
+nav img { display: inline; width: 80px; float: left; margin-top: -40px; }
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    
+}
+/* Hover effect with red color */
+nav ul li a::after{ content:''; width: 0%; height: 2px; background: #f44336; display: block; margin:auto;
+    transition: 0.5s;}
+nav a:hover {
+    color: #fff;
+    background-color: red;
+    content:''; 
+    width:100%;
+    opacity: 40%;
+}
+.nav-links ul li a:hover::after{
+    width:100%;
+}
+
+main {
+    padding: 2em;
+    background-color: white;
+    margin: 2em auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, select, button {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
